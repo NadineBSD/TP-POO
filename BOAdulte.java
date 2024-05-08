@@ -1,37 +1,28 @@
-
 public class BOAdulte extends BO {
-	
 
+    private String diplome;
+    private String profession;
 
-	private String diplome;
-	private String profession;
-	private String numTel;
-	
-	public String getDiplome()
-	{
-		return(this.diplome);
-	}
-	public String getProfission()
-	{
-		return(this.profession);
-	}
-	public String getNumTel()
-	{
-		return(this.numTel);
-	}
-	public void setNumTel(String numTel)
-	{
-		this.numTel=numTel;
-	}
-	public void setDiplome(String diplome)
-	{
-		this.diplome=diplome;
-	}
-	public void setProfission(String profission)
-	{
-		this.profession =profission;
-	}
-	
+    public BOAdulte(Anamnese anamnese, Diagnostic diagnostic, String projetTherapeutique, String numTel, String diplome, String profession) {
+        super(anamnese,diagnostic,projetTherapeutique,numTel);
+        this.diplome = diplome;
+        this.profession = profession;
+    }
+
+    public String getDiplome() {
+        return(this.diplome);
+    }
+
+    public String getProfission() {
+        return(this.profession);
+    }
+
+    public void setDiplome(String diplome) {
+        this.diplome=diplome;
+    }
+
+    public void setProfission(String profission) {
+        this.profession =profission;
+    }
+
 }
-
-

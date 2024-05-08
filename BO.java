@@ -1,17 +1,18 @@
-
 public class BO {
-	
-	private Anamnese anamnese;
-	//private EpreuveClinique[] listeEpreuves;
-	private Diagnostic diagnostic;
-	private String projetTherapeutique;
-	
-	public BO (Anamnese anamnese, Diagnostic diagnostic, String projetTherapeutique) {
-		this.anamnese = anamnese;
-		this.diagnostic = diagnostic;
-		this.projetTherapeutique = projetTherapeutique;
-	}
-	
+
+    private Anamnese anamnese;
+    //private EpreuveClinique[] listeEpreuves;
+    private Diagnostic diagnostic;
+    private String projetTherapeutique;
+    private String numTel;
+
+    public BO (Anamnese anamnese, Diagnostic diagnostic, String projetTherapeutique, String numTel) {
+        this.anamnese = anamnese;
+        this.diagnostic = diagnostic;
+        this.projetTherapeutique = projetTherapeutique;
+        this.numTel = numTel;
+    }
+
     public Anamnese getAnamnese() {
         return anamnese;
     }
@@ -41,6 +42,14 @@ public class BO {
 
     public void setProjetTherapeutique(String projetTherapeutique) {
         this.projetTherapeutique = projetTherapeutique;
+    }
+
+    public String getNumTel() {
+        return(this.numTel);
+    }
+
+    public void setNumTel(String numTel) {
+        this.numTel=numTel;
     }
 
 }
